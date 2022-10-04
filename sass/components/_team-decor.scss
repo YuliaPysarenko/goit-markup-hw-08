@@ -1,0 +1,40 @@
+.icon-teams {
+    @extend %centeredflex;
+  
+     margin-bottom: 30px;
+}
+
+.icon-teams__item {
+
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+
+}
+
+.icon-teams__link {
+@extend %centeredflex;
+
+    fill: #AFB1B8;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:nth-child(4) {
+    margin-right: 0px;
+}
+
+&:hover,
+&:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+}
+
+}
+
+.icon-teams__icon {
+    margin-right: 0px;
+}

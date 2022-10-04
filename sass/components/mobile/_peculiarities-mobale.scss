@@ -1,0 +1,39 @@
+.benefit {
+       @extend %centeredflex;
+
+      width: 450px;
+         height: 120px;
+         background-color: rgba(245, 244, 250, 1);
+
+        border-radius: 4px;
+        margin-bottom: 30px;
+   
+ }
+//  .features__item:last-child {
+//        margin-bottom: 60px;
+// }
+
+ .features__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+        text-align: center;
+        margin-bottom: 10px;
+     }
+
+         .features__post {
+                 color: $titel-text-color;
+                 font-weight: 400;
+                 line-height: 1.71;
+                 letter-spacing: 0.03em;
+              
+                 margin-bottom: 30px;
+                 
+                 &:last-child {
+                     margin-bottom: 0px;
+                 }
+               } 

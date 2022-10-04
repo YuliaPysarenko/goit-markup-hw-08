@@ -1,0 +1,85 @@
+ .page-header {
+
+    @media screen and (min-width:768px) {
+    border-bottom: 1px solid #ECECEC;}
+    
+    @media screen and (min-width:1200px) {
+       width: 1200px;
+    }
+}
+
+.page-header__nav {
+    @extend %centeredflex;
+}
+
+.conteiner.main-nav {
+    @extend %centeredflex;
+}
+
+.logo-tablet {
+    @media screen and (min-width:768px) {
+            display: flex;
+        }
+}
+
+
+.logo {
+    @media screen and (min-width:1200px) {
+    display: block;
+    margin-right: 93px;}
+}
+
+.header-tablet {
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+}
+
+
+.contacts-icon-tablet {
+    @media screen and (min-width:1200px) {
+           display: flex;
+         
+           margin-left: auto;
+        }
+}
+
+.contacts-icon {
+    @media screen and (min-width:1200px) {
+            display: flex;  
+        
+            margin-bottom: 0px;
+        }
+}
+
+
+
+.contacts {
+    @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+}
+
+
+  .contacts-icon__mail,
+ .contacts-icon__tel {  
+    @media screen and (min-width:768px) {
+    margin-left: auto;}
+        
+ 
+ .contacts-icon__mail {
+     @media screen and (min-width:1200px) {
+            margin: 0px;
+         }
+ }
+ }
+
+ .menu-button {
+     @extend %centeredflex;}
+
+

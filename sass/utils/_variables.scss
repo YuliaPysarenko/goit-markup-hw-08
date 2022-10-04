@@ -1,0 +1,54 @@
+$primary-text-color:#212121;
+$titel-text-color:#757575;
+$accent-color:#2196F3;
+$primary-white-color:#FFFFFF;
+$h-button-color:#188CE8;
+$box-shadow-color:0px 4px 4px rgba(0, 0, 0, 0.15);
+$color-link-footer:rgba(255, 255, 255, 0.6);
+$select-button-color:#F5F4FA;
+$background-color:#2F303A;
+$borderbox-portfolio-color:#EEEEEE;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    background-color: $primary-white-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

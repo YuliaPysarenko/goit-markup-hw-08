@@ -1,0 +1,78 @@
+.page-header {
+    position: relative;
+}
+.page-header__nav {
+    @media screen and (max-width:767px) {
+    min-height: 60px;
+    min-width: 480px;}
+}
+
+
+.logo { 
+    @media screen and (min-width:768px){
+        margin-right: 88px;
+    }
+    
+}
+
+.menu-button .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-button {
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 23px;
+    margin-left: 270px;
+   
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+           &:hover,
+           &:focus { fill: $accent-color;
+        }
+        
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    }
+
+
+
+.menu-conteiner {
+  @media screen and (max-width:767px) {
+   cursor: pointer;
+    width: 480px;
+    height: 796px;
+    background-color: $primary-white-color;
+    text-align: center;
+    padding: 48px 40px;
+    display: none;
+         position: absolute;
+         top: 100%;
+         left: 0px;
+         width: 100%;
+
+    &.is-open {
+        display: block;}
+    }
+}
+.icon-close:hover,
+.icon-close:focus {
+    fill: $accent-color;
+}
