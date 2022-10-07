@@ -8,6 +8,7 @@
     visibility: visible;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
 
 }
 
@@ -18,8 +19,11 @@
 }
 
 .modal {
-
-    @extend %positionCenter;
+@media screen and (min-width:480px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
     min-width: 450px;
     min-height: 609px;
@@ -29,7 +33,7 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    padding: 40px;
+    padding: 40px;}
 
     @media screen and (min-width:1200px) {
         min-width: 528px;
@@ -38,10 +42,10 @@
 }
 
 .modal__button {
-    position: absolute;
-    width: 30px;
-    height: 1.88;
-    border-radius: 50%;
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
 
     top: 0px;
     right: 0px;
@@ -62,35 +66,40 @@
 
 .modal__iconClose {
        @extend %positionCenter;
-       border-radius: 50%;
 }
 
 
 /* Форма в модальном окне в разделе заказать услугу */
 
 .modal__paragraph {
-
-    width: 448px;
-    height: 23px;
-
+@media screen and (min-width:480px) {
+    width: 370px;
+    height: 60px;
+    margin-bottom: 12px;
+    display: inline-block;
+   
+    margin-right: 0px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: $primary-text-color;
 
-    margin-bottom: 16px;
 }
 
-.modal__label {
+@media screen and (min-width:1200px) {
+    width: 448px;
+    height: 23px;
+}}
 
+.modal__label {
+@media screen and (min-width:480px) {
     display: flex;
     flex-direction: column;
     text-align: left;
     position: relative;
-
 
     margin: 0px;
 
@@ -99,20 +108,20 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
 
-    color: $titel-text-color;
+    color: $titel-text-color;}
 }
 
 
 .modal__input {
-
+@media screen and (min-width:480px) {
 
     padding: auto;
     padding-left: 42px;
     margin-top: 4px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 
-    width: 448px;
+    width: 370px;
     height: 40px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -133,25 +142,33 @@
     }
 }
 
-
-.modal__icon {
-    position: absolute;
-    padding: 11px auto 11px 12px;
-
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-
-    cursor: pointer;
-
+@media screen and (min-width:1200px) {
+    width: 448px;
+}
 }
 
 
-.modal__comment {
+.modal__icon {
+    @media screen and (min-width:480px) {
+    position: absolute;
+    padding: 11px auto 11px 12px;
 
+     top: 53%;
+     left: 13px;
+     transform: translateY(-50%);
+    cursor: pointer;}
+
+@media screen and (min-width:1200px) {
+        top: 50%;
+        left: 15px;
+}}
+
+
+.modal__comment {
+@media screen and (min-width:480px) {
     resize: none;
 
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -172,20 +189,33 @@
     &:focus {
         border-color: $h-button-color;
         outline: none !important;
-    }
+    }}
+        @media screen and (min-width:1200px) {
+               width: 448px;
+        }
 }
 
 
 .modal__labelCheckbox {
-    @extend %centeredflex;
-
-    margin-bottom: 30px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @media screen and (min-width:480px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 31px;
+          font-weight: 400;
+          font-size: 12px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     color: $titel-text-color;
-    cursor: pointer;
+    cursor: pointer;}
+  
+ @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 30px;
+ }
+    
+    
 }
 
 .modal__inputCheckbox {
@@ -209,7 +239,7 @@
 
     display: inline-block;
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 8px;
 
 
 }

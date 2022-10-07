@@ -23,15 +23,17 @@
     color: $primary-white-color;
 
     margin-bottom: 20px;
-}
 
+    @media screen and (min-width:768px) {
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+}
 .footer-button {
   
-    display: block;
-
+   @extend %centeredflex;
     margin: auto;
-    
-
     width: 200px;
     height: 50px;
 
@@ -58,5 +60,4 @@
 
 .footer-button__icon {
       margin-left: 10px;
-  
 }

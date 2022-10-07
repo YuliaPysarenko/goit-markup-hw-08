@@ -1,7 +1,11 @@
 /* Чем мы занимаемся */
 
 .over-work {
-    padding-top: 0px;
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+          @media screen and (max-width:1199px) {
+    padding-top: 0px;}
 }
 
 .conteiner__title {

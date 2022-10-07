@@ -17,20 +17,72 @@
         margin-bottom: 30px;
 }
 
+.our-team {
+   
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap; 
+    }
 
+        
+}
 .our-team__item {
-    width: 450px;
-    height: 622px;
-    margin-bottom: 30px; 
-
     background-color: $primary-white-color;
     border-radius: 0px 0px 4px 4px;
-   
+
+@media screen and (min-width:480px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-right: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0px;
+    }
+
+    &:last-child {
+        @media screen and (min-width:480px) {
+            margin-bottom: 0px;
+        }
+    }
+
+    &:nth-child(n + 3) {
+        @media screen and (min-width:768px) {
+            margin-bottom: 0px;
+
+        }
+    }
+
+    &:nth-child(2n) {
+        @media screen and (min-width:768px) {
+            margin-right: 0px;
+        }
+    }
+
+    &:nth-child(2) {
+        @media screen and (min-width:1200px) {
+            margin-right: 30px;
+        }
+    }
 }
+
 
 .our-team__foto {
     margin-bottom: 30px;
-  
+    
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+    
+   @media screen and (min-width:768px) {
+       width: 354px;
+   }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
 }
 
 .our-team__name {

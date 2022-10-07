@@ -1,24 +1,64 @@
 .logo-clients {
+    @media screen and (min-width:480px) {
 display: flex;
-justify-content: space-around;
+// justify-content: space-around;
 flex-wrap: wrap;
 
 cursor: pointer;
 }
-
+}
 .logo-clients__item {
-    width: 210px;
-    height: 92px;
+
+    @media screen and (min-width:480px) {
+     width: 210px;
+     height: 92px;
      margin-right: 30px;
      margin-bottom: 30px;
+       }
+  
+    @media screen and (min-width:768px) {
+       width: 226px;
+        }
 
-&:nth-child(2n) {
+           @media screen and (min-width:1200px) {
+            margin-bottom: 0px;
+               width: 170px;
+           }
+
+           &:nth-child(2n) {
+               @media screen and (min-width:480px) {
+                   margin-right: 0px;
+               }
+           }
+
+                &:nth-child(n + 5) {
+                    @media screen and (min-width:480px) {
+                        margin-bottom: 0px; }
+                         }
+
+    &:nth-child(2n) {
+        @media screen and (min-width:768px) {
+          margin-right: 30px;}
+    }
+
+&:nth-child(3n) {
+    @media screen and (min-width:768px) {
         margin-right: 0px;
     }
-    &:nth-child(n+5) {
-        margin-bottom: 0px;
+}
+
+ &:nth-child(n + 4) {
+     @media screen and (min-width:768px) {
+         margin-bottom: 0px;
+     }
+ }
+
+&:nth-child(3) {
+    @media screen and (min-width:1200px) {
+        margin-right: 30px;
     }
-    
+}
+
 }
 
 .logo-clients__link {
@@ -39,7 +79,6 @@ cursor: pointer;
     &:focus {
     fill: $accent-color;
     border: 1px solid #2196F3;
-
     }
 }
 

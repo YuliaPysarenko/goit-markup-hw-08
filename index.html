@@ -26,7 +26,8 @@
                 aria-expanded="false" 
                 aria-controls="menu-conteiner"
                 data-menu-button>
-                <svg class="" widht="24" height="16" aria-label="Перемикач мобільного меню">
+                <svg class="" width="24" height="16" aria-label="Перемикач мобільного меню">
+                    
                 <use class="icon-close" href="./imeges/icons.svg#icon-close"></use>
                 <use class="icon-menu" href="./imeges/icons.svg#icon-menu"></use>
                 </svg>
@@ -115,7 +116,7 @@
         <div class="modal">
            
             <button class="modal__button" type="button" data-modal-close>
-            <svg class="modal__iconClose" width="30" height="30">
+            <svg class="modal__iconClose" width="18" height="18">
                 <use href="./imeges/icons.svg#icon-close-black"></use>
             </svg>
         </button>
@@ -172,65 +173,73 @@
     </div>
     </section>
 <!-- особливості -->
-    <section class="section">
-    <div class="conteiner">
-<h2 hidden>Переваги</h2>
-<div class="div-benefit">
-    <div class="benefit">
-             <svg class="benefit__icon" width="70" height="70">
-            <use href="./imeges/icons.svg#icon-antenna"></use>
-        </svg>
-    </div>
+<section class="section">
+<div class="conteiner">
+    <h2 hidden>Переваги</h2>
+    <ul class="div-benefit">
+
+<li class="benefit-mobile">
+        <div class="benefit">
+            <svg class="benefit__icon" width="70" height="70">
+                <use href="./imeges/icons.svg#icon-antenna"></use>
+            </svg>
+       </div>
         <ul class="features">
             <li class="features__item">
-           
-        <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="features__post">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+
+                <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="features__post">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                </p>
             </li>
-            </ul>
-
-    <div class="benefit">
-        <svg class="benefit__icon" width="70" height="70">
-            <use href="./imeges/icons.svg#icon-clock"></use>
-        </svg>
-    </div>
-<ul class="features">
-    <li class="features__item">
-        <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
-        <p class="features__post">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-    </li>
-</ul>
-
-    <div class="benefit">
-        <svg class="benefit__icon" width="70" height="70">
-            <use href="./imeges/icons.svg#icon-diagram"></use>
-        </svg>
-    </div>
-<ul class="features">
-    <li class="features__item">
-        <h3 class="features__title">ПЛАНУВАННЯ</h3>
-        <p class="features__post">Так само консультація з широким активом значною мірою зумовлює.</p>
-    </li>
-</ul>
-
-    <div class="benefit">
-        <svg class="benefit__icon" width="70" height="70">
-            <use href="./imeges/icons.svg#icon-astronaut"></use>
-        </svg>
-    </div>
-
-    <ul class="features">
-<li class="features__item">
-    <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-    <p class="features__post">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+        </ul> 
 </li>
-     </ul>
+<li class="benefit-mobile">
+        <div class="benefit">
+            <svg class="benefit__icon" width="70" height="70">
+                <use href="./imeges/icons.svg#icon-clock"></use>
+            </svg>
+        </div>
+        <ul class="features">
+            <li class="features__item">
+                <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="features__post">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </li>
+        </ul>
+</li>
+<li class="benefit-mobile">
+        <div class="benefit">
+            <svg class="benefit__icon" width="70" height="70">
+                <use href="./imeges/icons.svg#icon-diagram"></use>
+            </svg>
+        </div>
+        <ul class="features">
+            <li class="features__item">
+                <h3 class="features__title">ПЛАНУВАННЯ</h3>
+                <p class="features__post">Так само консультація з широким активом значною мірою зумовлює.</p>
+            </li>
+        </ul>
+</li>
+<li class="benefit-mobile">
+        <div class="benefit">
+            <svg class="benefit__icon" width="70" height="70">
+                <use href="./imeges/icons.svg#icon-astronaut"></use>
+            </svg>
+        </div>
+
+        <ul class="features">
+            <li class="features__item">
+                <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="features__post">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </li>
+        </ul>
+</li>      
+</ul>
+
 </div>
 
+</section>
+ 
 
-  
-     </div> 
-    </section>
 <!-- Чим ми займаємося -->
         <section class="section over-work">
         <div class="conteiner">
@@ -273,7 +282,9 @@
             <h2 class="conteiner__title">Наша команда</h2>
          <ul class="our-team">
             <li class="our-team__item">
-                <img class="our-team__foto" src="./imeges/foto.jpg" alt="фото мужчины в очках и коричневой рубашке- Игорь Демьяненко" width="270">
+                <img srcset="./imeges/foto.jpg 1x,
+                ./imeges/foto1-2x.jpg 2x"
+                class="our-team__foto" src="./imeges/foto.jpg" alt="фото мужчины в очках и коричневой рубашке- Игорь Демьяненко" width="270">
                 <h3 class="our-team__name">Ігор Дем'яненко</h3>   
                 <p class="our-team__specialty" lang="en">Product Designer</p>
         
@@ -308,7 +319,9 @@
             </li>
           
          <li class="our-team__item">
-                <img class="our-team__foto" src="./imeges/foto(1).jpg" alt="фото блондинки в очках-Ольга Репина" width="270">
+                <img srcset="./imeges/foto(1).jpg 1x,
+                               ./imeges/foto2-2x.jpg 2x"
+                class="our-team__foto" src="./imeges/foto(1).jpg" alt="фото блондинки в очках-Ольга Репина" width="270">
                 <h3 class="our-team__name">Ольга Репіна</h3> 
                 <p class="our-team__specialty" lang="en">Frontend Developer</p>
 
@@ -343,7 +356,9 @@
            </li> 
             
            <li class="our-team__item">
-                <img class="our-team__foto" src="./imeges/foto(3).jpg" alt="фото мужчины в голубой рушке-Николай Тарасов" width="270">
+                <img srcset="./imeges/foto(3).jpg 1x,
+                              ./imeges/foto3-2x.jpg 2x" 
+                class="our-team__foto" src="./imeges/foto(3).jpg" alt="фото мужчины в голубой рушке-Николай Тарасов" width="270">
              <h3 class="our-team__name">Микола Тарасов</h3>
                 <p class="our-team__specialty" lang="en">Marketing</p>
     
@@ -377,7 +392,9 @@
           </ul>
         </li>
          <li class="our-team__item">
-                <img class="our-team__foto" src="./imeges/foto(4).jpg" alt="фото мужчина в очках и черной футболке-Михаил Ермаков" width="270">
+                <img srcset="./imeges/foto(4).jpg 1x,
+                             ./imeges/foto4-2x.jpg 2x" 
+                class="our-team__foto" src="./imeges/foto(4).jpg" alt="фото мужчина в очках и черной футболке-Михаил Ермаков" width="270">
                 <h3 class="our-team__name">Михайло Єрмаков</h3> 
                 <p class="our-team__specialty" lang="en">UI Designer</p>
         
@@ -474,6 +491,8 @@
 <!-- Підвал -->
 <footer class="footer">
     <div class="conteiner box-footer">
+
+    <div class="footer-tablet">
 <div class="footer-box">
         <a class="logo footer-box__logo" href="">Web<span class="logo__studio">Studio</span></a>
         <address class="address">
@@ -517,6 +536,7 @@
     
     </ul>
         </div>
+</div>
 
         <div class="footer-boxForm">
             <p class="footer-boxForm__paragraph">Підпишіться на розсилку</p>

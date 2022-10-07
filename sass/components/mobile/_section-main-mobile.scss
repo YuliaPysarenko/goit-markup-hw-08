@@ -12,18 +12,21 @@
  /* Заказать услугу */
 
  .section-main {
-    @media screen and (min-width:480px) {
+    
      background-color: $background-color;
      padding-bottom: 118px;
      padding-top: 118px;
-     text-align: center;
+     text-align: center; 
+
+
 
     //  Фон
 
+   @media screen and (min-width:480px) {
     max-width: 1600px;
     height: 400px;
 
-    background-image: url(../imeges/img2x.jpg);
+    background-image: url(/imeges/Header-mobile.jpg);
     margin-right: auto;
     margin-left: auto;
 
@@ -31,11 +34,31 @@
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../imeges/img2x.jpg);
+        url(/imeges/Header-mobile.jpg);
     background-size: cover; 
-   
-    }
+   } 
+   @media screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
+    background-image: url(/imeges/Header-mobile2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(/imeges/Header-mobile2x.jpg);
+   }
      
+  @media screen and (min-width:768px) {
+      background-image: url(/imeges/Header-tablet.jpg);
+
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)),
+          url(/imeges/Header-tablet2x.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution:2dppx) {
+      background-image: url(/imeges/Header-tablet2x.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)),
+          url(/imeges/Header-tablet2x.jpg);
+  }
 
   @media screen and (min-width:1200px) {
     height: 600px;
@@ -43,11 +66,19 @@
     padding-top: 200px;
    
     
-    background-image: url(../imeges/img.jpg);
+    background-image: url(/imeges/img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../imeges/img.jpg);        
+            url(/imeges/img.jpg);        
   }   
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution:2dppx) {
+      background-image: url(/imeges/Img2x.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)),
+          url(/imeges/Img2x.jpg);
+  }
  }
 
  .section-main__titel {
