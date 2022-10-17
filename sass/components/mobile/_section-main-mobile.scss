@@ -5,9 +5,13 @@
 
         @media screen and (min-width:1200px) {
      padding-top: 94px;
-    padding-bottom: 94px;
-}}
-
+     padding-bottom: 94px;
+        }
+}
+.over-work {
+ @media screen and (min-width:1200px) {
+padding-top: 0px;
+                  } }
 
  /* Заказать услугу */
 
@@ -62,7 +66,7 @@
 
   @media screen and (min-width:1200px) {
     height: 600px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
     padding-top: 200px;
    
     
@@ -91,13 +95,17 @@
      letter-spacing: 0.06em;
      text-transform: uppercase;
      
-    margin: 0px auto;
+     margin: 0px auto;
     margin-bottom: 30px;}
     
+        @media screen and (min-width:768px) {
+          width:360px;
+        }
 
    @media screen and (min-width:1200px) {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
    
  }
 }

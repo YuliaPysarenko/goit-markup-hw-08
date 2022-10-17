@@ -6,6 +6,10 @@
 
     display: block;
     justify-content: center;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 }
 
 .footer-form__input {
@@ -29,7 +33,11 @@ display: block;
 margin-right: auto;
 margin-left: auto;
 }
-}
+
+@media screen and (min-width:1200px) {
+    width: 358px;
+margin-bottom: 0px;
+}}
 .footer-button {
   
    @extend %centeredflex;
@@ -56,7 +64,13 @@ margin-left: auto;
     &:focus {
         background-color: $h-button-color;
     }
+
+@media screen and (min-width:1200px) {
+    margin-top: 0px;
+    margin-left: 12px;
 }
+}
+
 
 .footer-button__icon {
       margin-left: 10px;

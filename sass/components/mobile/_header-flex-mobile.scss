@@ -3,18 +3,15 @@
     @media screen and (min-width:768px) {
     border-bottom: 1px solid #ECECEC;}
     
-    @media screen and (min-width:1200px) {
-       width: 1200px;
-    }
 }
 
-.page-header__nav {
-    @extend %centeredflex;
-}
+ .page-header__nav {
+     @extend %centeredflex;
+ }
 
-.conteiner.main-nav {
-    @extend %centeredflex;
-}
+ .conteiner.main-nav {
+     @extend %centeredflex;
+ }
 
 .logo-tablet {
     @media screen and (min-width:768px) {
