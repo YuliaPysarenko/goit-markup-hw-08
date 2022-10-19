@@ -6,15 +6,24 @@
     padding-bottom: 60px;
 }
 
-.box-footer {
+.box-footer {  
 @media screen and (min-width:1200px) {
-         display: flex;
+        display: flex;
+        align-items: baseline;
         }
 }
 .footer-tablet {
+
 @media screen and (min-width:768px) {
-    display: flex;}
+   display: flex;
+   padding-left: 61px;
+   padding-right: 74px;
+   align-items: baseline;
 }
+@media screen and (min-width:1200px) {
+padding-left: 0px;
+padding-right: 0px;
+}}
 
 .logo.footer-box__logo {
     display: block;

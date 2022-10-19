@@ -19,7 +19,7 @@
 }
 
 .modal {
-@media screen and (min-width:480px) {
+// @media screen and (min-width:480px) {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -33,8 +33,8 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    padding: 40px;}
-
+     padding: 40px;
+    
     @media screen and (min-width:1200px) {
         min-width: 528px;
         min-height: 581px;
@@ -72,7 +72,7 @@
 /* Форма в модальном окне в разделе заказать услугу */
 
 .modal__paragraph {
-@media screen and (min-width:480px) {
+// @media screen and (min-width:480px) {
     width: 370px;
     height: 60px;
     margin-bottom: 12px;
@@ -87,15 +87,13 @@
 
     color: $primary-text-color;
 
-}
-
 @media screen and (min-width:1200px) {
     width: 448px;
     height: 23px;
 }}
 
 .modal__label {
-@media screen and (min-width:480px) {
+// @media screen and (min-width:480px) {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -108,12 +106,13 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
 
-    color: $titel-text-color;}
+    color: $titel-text-color;
 }
 
 
+
 .modal__input {
-@media screen and (min-width:480px) {
+// @media screen and (min-width:480px) {
 
     padding: auto;
     padding-left: 42px;
@@ -140,7 +139,7 @@
     &:focus+.modal__icon {
         fill: $accent-color;
     }
-}
+
 
 @media screen and (min-width:1200px) {
     width: 448px;
@@ -148,15 +147,15 @@
 }
 
 
-.modal__icon {
-    @media screen and (min-width:480px) {
+ .modal__icon {
+//     @media screen and (min-width:480px) {
     position: absolute;
     padding: 11px auto 11px 12px;
 
      top: 53%;
      left: 13px;
      transform: translateY(-50%);
-    cursor: pointer;}
+    cursor: pointer;
 
 @media screen and (min-width:1200px) {
         top: 50%;
@@ -165,7 +164,7 @@
 
 
 .modal__comment {
-@media screen and (min-width:480px) {
+// @media screen and (min-width:480px) {
     resize: none;
 
     width: 370px;
@@ -189,7 +188,7 @@
     &:focus {
         border-color: $h-button-color;
         outline: none !important;
-    }}
+    }
         @media screen and (min-width:1200px) {
                width: 448px;
         }
@@ -197,7 +196,7 @@
 
 
 .modal__labelCheckbox {
-    @media screen and (min-width:480px) {
+    // @media screen and (min-width:480px) {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -207,15 +206,13 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: $titel-text-color;
-    cursor: pointer;}
+    cursor: pointer;
   
  @media screen and (min-width:1200px) {
     font-size: 14px;
     line-height: 1.71;
     margin-bottom: 30px;
- }
-    
-    
+ }   
 }
 
 .modal__inputCheckbox {

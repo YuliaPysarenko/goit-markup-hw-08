@@ -19,8 +19,7 @@
     text-align: start;
 
     @media screen and (min-width:768px) {
-        color: $accent-color;
-        
+        color: $accent-color;  
     }
 }
 
@@ -28,10 +27,6 @@
  .contacts__item {
 @media screen and (max-width:767px) {
     margin-bottom: 32px;
-
-    // &:last-child {
-    //         margin-bottom: 302px;
-    // }}
 }
 
           @media screen and (min-width:768px) {
