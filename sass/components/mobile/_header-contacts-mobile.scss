@@ -23,19 +23,33 @@
     }
 }
 
+.tablet-contacts {
+    @media screen and (max-width:768px) {
+        display: none;
+}}
+
+.tablet-icon {
+     @media screen and (max-width:768px) {
+         display: none;
+     }
+ }
 
  .contacts__item {
 @media screen and (max-width:767px) {
     margin-bottom: 32px;
-}
+    &:last-child {
+            margin-bottom: 302px;
+        }
+    }
+   
 
           @media screen and (min-width:768px) {
-            margin-right: 50px;
+         margin-right: 50px;
             &:last-child {
-                   margin-right: 0px;
+                   margin-right: 0px; 
         }
  }
- }
+}
  
  .contacts__link.current {
      position: relative;

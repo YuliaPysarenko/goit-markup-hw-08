@@ -45,7 +45,7 @@ img {
   height: auto;
 }
 
-.footer-button, .footer-icon__link, .footer-icon, .logo-clients__link, .icon-teams__link, .icon-teams, .benefit, .social-menu__link, .menu-button, .conteiner.main-nav, .page-header__nav {
+.footer-button, .footer-icon__link, .footer-icon, .logo-clients__link, .icon-teams__link, .icon-teams, .benefit, .social-menu__link, .conteiner.main-nav, .page-header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,19 +118,39 @@ img {
   }
 }
 
-.menu-button .icon-close {
-  display: none;
+@media screen and (max-width: 767px) {
+  .menu-conteiner {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    padding-left: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
 }
 
-.menu-button.is-open .icon-close {
+.menu-conteiner.is-open {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+}
+
+.menu-toggle.is-open .icon-close {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-toggle.is-open .icon-menu {
   display: none;
 }
 
-.menu-button {
+.menu-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,8 +160,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 23px;
-  margin-left: 270px;
+  margin-right: 15px;
+  margin-left: auto;
+  margin-top: 10px;
   padding: 0px;
   width: 40px;
   height: 40px;
@@ -149,37 +170,18 @@ img {
   background-color: transparent;
   cursor: pointer;
 }
-.menu-button:hover, .menu-button:focus {
+.menu-toggle:hover, .menu-toggle:focus {
   fill: #2196F3;
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-toggle {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .menu-conteiner {
-    position: absolute;
-    cursor: pointer;
-    width: 480px;
-    height: 796px;
-    background-color: #FFFFFF;
-    text-align: center;
-    padding: 48px 40px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: 100%;
-    left: 0px;
-  }
-  .menu-conteiner.is-open {
-    display: block;
+@media screen and (min-width: 768px) {
+  .contacts.mobile-menu {
+    display: none;
   }
 }
 
@@ -211,9 +213,24 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .tablet-contacts {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tablet-icon {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contacts__item {
     margin-bottom: 32px;
+  }
+  .contacts__item:last-child {
+    margin-bottom: 302px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -280,15 +297,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .header-tablet {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 0px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .contacts-icon-tablet {
     display: inline-block;
     margin-left: auto;
@@ -333,25 +341,21 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-icon-mobile {
-    display: none;
+  .tablet-icon {
+    margin-left: auto;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .contacts-icon-tablet {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contacts-icon-tablet {
+@media screen and (min-width: 1200px) {
+  .tablet-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-icon-mobile {
+    display: none;
   }
 }
 
@@ -381,13 +385,6 @@ img {
 .contacts-icon__tel {
   font-weight: 500;
   letter-spacing: 0.02em;
-}
-@media screen and (max-width: 767px) {
-  .contacts-icon__mail,
-.contacts-icon__tel {
-    display: block;
-    justify-self: start;
-  }
 }
 @media screen and (min-width: 768px) {
   .contacts-icon__mail,

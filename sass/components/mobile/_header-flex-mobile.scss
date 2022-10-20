@@ -26,12 +26,12 @@
     margin-right: 93px;}
 }
 
-.header-tablet {
-    @media screen and (min-width:768px) {
-        display: flex;
-        margin-bottom: 0px;
-    }
-}
+// .header-tablet {
+//     @media screen and (min-width:768px) {
+//         display: flex;
+//         margin-bottom: 0px;
+//     }
+// }
 
 
  .contacts-icon-tablet {
@@ -70,7 +70,12 @@
  }
  }
 
- .menu-button {
-     @extend %centeredflex;}
+.tablet-icon {
 
+@media screen and (min-width:768px) {
+  margin-left: auto; }
 
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+}
