@@ -2,11 +2,12 @@
 
      color: $accent-color;
      font-family: 'Raleway',
-         sans-serif;
+     sans-serif;
      font-weight: 700;
      font-size: 26px;
      line-height: 1.19;
      cursor: pointer;
+    
  }
 
  .logo__text {
@@ -38,7 +39,8 @@
 @media screen and (max-width:767px) {
     margin-bottom: 32px;
     &:last-child {
-            margin-bottom: 302px;
+        margin-bottom: auto;
+            // margin-bottom: 302px;
         }
     }
    

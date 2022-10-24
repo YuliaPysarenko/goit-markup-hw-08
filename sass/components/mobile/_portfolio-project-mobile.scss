@@ -12,11 +12,12 @@
 
 .portfolio-project__item {
 
-    // @media screen and (min-width:480px) {
-             width: 450px;
              margin-right: 0px;
              margin-bottom: 30px;
-        
+
+        @media screen and (min-width:480px) {
+             width: 450px;
+        }
   
                 @media screen and (min-width:768px) {
                 width: 354px;
@@ -32,7 +33,7 @@
 &:last-child {
     // @media screen and (min-width:480px) {
         margin-bottom: 0px;
-    // }
+     
 }
 
 &:nth-child(2n) {
@@ -60,12 +61,12 @@
 
 .product__img {
     @extend %marginZero;
-
-    // @media screen and (min-width:480px) {
-            width: 450px;
-            margin-right: 0px;
-        // }
-    
+     margin-right: 0px;
+     width: 100%;
+        
+   @media screen and (min-width:480px) {
+                  width: 450px;
+                }
         @media screen and (min-width:768px) {
             width: 354px; 
         }
@@ -83,6 +84,9 @@
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+
+    width: 100%;
+
     flex-grow: 1;
 
     &:first-child {

@@ -9,11 +9,10 @@
             margin-bottom: 50px; }}
 
 .portfolio-button {
+display: flex;
  margin-top: 0px;
- padding: 0px;
-
-// @media screen and (min-width:480px) {
-margin-bottom: 15px;
+ padding: 0px; 
+ margin-bottom: 15px; 
     
 
 @media screen and (min-width:768px) {
@@ -45,10 +44,11 @@ margin-bottom: 15px;
 }
 
 .portfolio-button__name {
-    padding: 6px 22px;
+  
     border: none;
     border-radius: 4px;
-
+    padding: 6px 22px;
+       
     background-color: $select-button-color;
     font-weight: 500;
     font-size: 16px;
@@ -64,4 +64,12 @@ margin-bottom: 15px;
         color: $primary-white-color;
         background-color: $accent-color;
     }
+
+//  @media screen and (max-width:340px) {
+//      padding: auto;
+//  }
+
+//         @media screen and (min-width:480px) {
+//             padding: 6px 22px;  
+// }
 }

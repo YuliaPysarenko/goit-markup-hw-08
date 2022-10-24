@@ -27,8 +27,8 @@ padding-top: 0px;
     //  Фон
 
 //    @media screen and (min-width:480px) {
-      max-width: 1600px;
-     height: 400px;
+    
+    height: 400px;
 
     background-image: url(../imeges/Header-mobile.jpg);
     margin-right: auto;
@@ -36,17 +36,22 @@ padding-top: 0px;
 
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media screen and (min-width:480px) {
+
+    max-width: 1600px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)),
      url(../imeges/Header-mobile.jpg);
-     background-size: cover; 
+      }
    
-
    @media screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
     background-image: url(../imeges/Header-mobile2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-           url(../imeges/Header-mobile2x.jpg);
+           url(../imeges/Header-mobile2x.jpg);  
    }
      
   @media screen and (min-width:768px) {
@@ -70,7 +75,6 @@ padding-top: 0px;
     padding-bottom: 200px;
     padding-top: 200px;
    
-    
     background-image: url(../imeges/img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -97,7 +101,7 @@ padding-top: 0px;
      text-transform: uppercase;
      
      margin: 0px auto;
-    margin-bottom: 30px;
+     margin-bottom: 30px;
     
         @media screen and (min-width:768px) {
           width:360px;
