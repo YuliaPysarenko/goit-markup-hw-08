@@ -5,9 +5,7 @@
     @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
-   
     }
-
 }
 
 .portfolio-project__item {
@@ -85,15 +83,20 @@
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 
-    width: 100%;
-
+ 
+@media screen and (min-width:768px) {
     flex-grow: 1;
-
+    width: 354px;
+}
     &:first-child {
             @media screen and (min-width:768px) {
                 padding-bottom: 56px;
             }
         }
+
+                 @media screen and (min-width:1200px) {
+                     width: 370px;
+                 }
 }
 
 .carts {

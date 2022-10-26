@@ -10,7 +10,7 @@
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
   window
-    .matchMedia('(min-width: 768px)')
+    .matchMedia('(max-width: 767px)')
     .addEventListener(
       'change',
       e => e.matches && menuContainer.classList.remove('is-open'),
